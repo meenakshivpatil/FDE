@@ -66,3 +66,45 @@ with open('../data/homework_invoices.csv', newline='') as csvfile:
 print(f"Total invoices read: {total_invoices}")
 print(f"Number of invoices greater than 100,000: {high_amount_invoices}")
 print(f"Number of invoices with missing/invalid amount: {invalid_amount_invoices}")
+
+#7 Write matching records into another CSV 
+#    - Only invoices with amount greater than 100,000 will be written to the new CSV file.
+
+
+with open('../data/homework_invoices.csv', newline='') as csvfile, open('../data/high_amount_invoices.csv', 'w', newline='') as outfile:
+    invoice_reader = csv.DictReader(csvfile)
+    fieldnames = invoice_reader.fieldnames
+    print(f"Fieldnames: {fieldnames}")
+    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for row in invoice_reader:
+        try:
+            amount_value = float(row.get("amount"))
+            if amount_value > 100000:
+                writer.writerow(row)
+        except (ValueError, TypeError):
+            continue
+
+#8 group by vendor
+from collections import defaultdict
+
+vendor_invoices = defaultdict(list)
+
+with open('../data/homework_invoices.csv', newline='') as csvfile:
+    invoice_reader = csv.DictReader(csvfile)
+    for row in invoice_reader:
+        try:
+            amount_value = float(row.get("amount"))
+            if amount_value > 100000:
+                vendor_invoices[row.get("vendor")].append(row)
+        except (ValueError, TypeError):
+            continue
+
+with open('../data/high_amount_invoices_by_vendor.csv', 'w', newline='') as outfile:
+    fieldnames = ["invoice_id", "vendor", "amount", "status"]
+    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for vendor, invoices in vendor_invoices.items():
+        for invoice in invoices:
+            writer.writerow(invoice)
+
