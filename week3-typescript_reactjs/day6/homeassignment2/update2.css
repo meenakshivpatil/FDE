@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Window frame with the blue title bar (same as search2) */
+.window {
+    max-width: 480px;
+    min-height: 620px;         /* leaves the empty space at the bottom, as in the sketch */
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #333;
+}
+
+.title-bar {
+    background: #a8dcff;
+    border-bottom: 2px solid #333;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.content {
+    padding: 12px 12px 32px;
+}
+
+/* The two boxes inside the window */
+.panel {
+    border: 1px solid #555;
+    padding: 16px 16px 20px;
+    margin-bottom: 24px;
+}
+
+/* Box 1: two columns - Encounter Id | Patient Number, Status | Assigned To */
+.update-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 40px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* fields keep their own width instead of stretching */
+}
+
+.full {
+    grid-column: 1 / -1;       /* span both columns */
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: 6px 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+
+.field input {
+    width: 100%;
+}
+
+.field select {
+    width: 150px;
+}
+
+.field textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.field input[readonly] {
+    background: #f2f2f2;
+    color: #444;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 4px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e8f4ff;
+}
+
+/* "< Back" link styled like the Update button, above the form */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #222;
+    text-decoration: none;
+}
+
+.message {
+    min-height: 1.2em;
+    margin: 0;
+}
+
+.message.error {
+    color: #b00020;
+}
+
+.message.success {
+    color: #2e7d32;
+}
+
+/* Box 2: list of updates */
+.updates {
+    min-height: 120px;
+    overflow-x: auto;
+}
+
+.updates table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.updates th,
+.updates td {
+    padding: 6px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.updates th {
+    background: #eef3f7;
+    white-space: nowrap;
+}
+
+.updates td.empty {
+    text-align: center;
+    color: #666;
+    padding: 32px 8px;
+    border-bottom: none;
+}
+
+@media (max-width: 420px) {
+    .update-form {
+        grid-template-columns: 1fr;
+    }
+}

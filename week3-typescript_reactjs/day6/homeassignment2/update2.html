@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Patient</title>
+    <link rel="stylesheet" href="update2.css">
+</head>
+<body>
+    <div class="window">
+        <header class="title-bar">Diabetes Patient Management</header>
+
+        <main class="content">
+            <a href="search2.html" class="btn back-btn">&lt; Back</a>
+
+            <!-- Box 1: update form -->
+            <form id="updateForm" class="panel update-form">
+                <div class="field">
+                    <label for="encounterId">Encounter Id</label>
+                    <input type="text" id="encounterId" readonly>
+                </div>
+                <div class="field">
+                    <label for="patientNumber">Patient Number</label>
+                    <input type="text" id="patientNumber" readonly>
+                </div>
+
+                <div class="field">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="PENDING_REVIEW">PENDING_REVIEW</option>
+                        <option value="ASSIGNED">ASSIGNED</option>
+                        <option value="CONTACTED">CONTACTED</option>
+                        <option value="FOLLOW_UP_SCHEDULED">FOLLOW_UP_SCHEDULED</option>
+                        <option value="CLOSED">CLOSED</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="assignedTo">Assigned To</label>
+                    <input type="text" id="assignedTo" maxlength="100">
+                </div>
+
+                <div class="field full">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" rows="2"></textarea>
+                </div>
+
+                <p id="message" class="message full"></p>
+
+                <div class="form-actions full">
+                    <button type="submit" class="btn">Update &gt;</button>
+                </div>
+            </form>
+
+            <!-- Box 2: list of updates (rows from intervention_history) -->
+            <div class="panel updates">
+                <table id="updatesTable">
+                    <thead>
+                        <tr>
+                            <th>Changed At</th>
+                            <th>Old Status</th>
+                            <th>New Status</th>
+                            <th>Assigned To</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="updatesBody">
+                        <tr><td colspan="5" class="empty">No updates yet.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="update2.js"></script>
+</body>
+</html>

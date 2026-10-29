@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Patient Search</title>
+    <link rel="stylesheet" href="search2.css">
+</head>
+<body>
+    <div class="window">
+        <header class="title-bar">Diabetes Patient Management</header>
+
+        <main class="content">
+            <h2 class="section-title">Search Patient</h2>
+
+            <form id="searchForm" class="search-form">
+                <label for="patientNumber">Patient Number</label>
+                <input type="text" id="patientNumber" name="patientNumber">
+
+                <label for="riskLevel">Risk Level</label>
+                <select id="riskLevel">
+                    <option value="">All</option>
+                    <option value="HIGH">HIGH</option>
+                    <option value="MEDIUM">MEDIUM</option>
+                </select>
+
+                <label for="RiskScore">Risk Score</label>
+                <input type="text" id="RiskScore" name="RiskScore">
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Search &gt;</button>
+                </div>
+            </form>
+
+            <div class="table-wrap">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Encounter Id</th>
+                            <th>Patient Number</th>
+                            <th>Risk Score</th>
+                            <th>Risk Level</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <tr><td colspan="4" class="empty">Enter search criteria and click Search.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="search2.js"></script>
+</body>
+</html>

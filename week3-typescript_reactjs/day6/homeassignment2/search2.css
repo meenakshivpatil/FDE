@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Window frame with the blue title bar */
+.window {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #333;
+}
+
+.title-bar {
+    background: #a8dcff;
+    border-bottom: 2px solid #333;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.content {
+    padding: 20px 32px 40px;
+}
+
+.section-title {
+    color: #1a6fc4;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* don't stretch fields to the form's full width */
+    max-width: 340px;          /* the Search button lines up with this right edge */
+}
+
+.search-form label {
+    margin: 12px 0 4px;
+    font-weight: 500;
+}
+.search-form input,
+.search-form select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+.search-form input {
+    width: 200px;      /* fits an 8-9 digit patient number */
+}
+
+.search-form select {
+    width: 120px;      /* fits "MEDIUM" plus the arrow */
+}
+
+.form-actions {
+    align-self: stretch;       /* full form width, so the button can sit on the right */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;          /* space between Risk Score and the Search button */
+}
+
+.btn {
+    padding: 8px 20px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    background: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e8f4ff;
+}
+
+.message {
+    min-height: 1.2em;
+    margin: 16px 0 8px;
+    color: #b00020;
+}
+
+.table-wrap {
+    margin-top: 40px;          /* gap between the form and the results table */
+    overflow-x: auto;
+    border: 1px solid #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+th {
+    background: #eef3f7;
+}
+
+td.empty {
+    text-align: center;
+    color: #666;
+    padding: 24px;
+}
+
+.encounter-link {
+    color: #1a6fc4;
+    font-weight: 600;
+}
+
+.level-HIGH {
+    color: #b00020;
+    font-weight: 600;
+}
+
+.level-MEDIUM {
+    color: #b36b00;
+    font-weight: 600;
+}
+
+.level-LOW {
+    color: #2e7d32;
+}
