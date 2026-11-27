@@ -1,0 +1,36 @@
+[
+  {
+    "user_id": "priya",
+    "display_name": "Priya",
+    "groups": [
+      "Application_Engineering",
+      "shared"
+    ]
+  },
+  {
+    "user_id": "arjun",
+    "display_name": "Arjun",
+    "groups": [
+      "Platform_Engineering",
+      "shared"
+    ]
+  },
+  {
+    "user_id": "meena",
+    "display_name": "Meena",
+    "groups": [
+      "Security_Engineering",
+      "shared"
+    ]
+  },
+  
+  {
+    "user_id": "divya",
+    "display_name": "Divya",
+    "groups": [
+      "Application_Engineering",
+      "Security_Engineering",
+      "shared"
+    ]
+  }
+]

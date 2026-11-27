@@ -1,0 +1,29 @@
+{
+  "description": "Configuration for chunking strategy comparison",
+  "fixed_size": {
+    "chunk_size": 500,
+    "overlap": 50,
+    "description": "Characters between boundaries"
+  },
+  "recursive": {
+    "chunk_size": 500,
+    "overlap": 50,
+    "separators": ["\n\n", "\n", " ", ""],
+    "description": "Tries multiple boundary types (paragraph, line, space, char)"
+  },
+  "structure_aware": {
+    "headers_to_split_on": ["#", "##", "###"],
+    "description": "Splits on markdown headings, ignores size limits"
+  },
+  "semantic": {
+    "semantic_percentile": 75,
+    "model": "BAAI/bge-small-en-v1.5",
+    "description": "Breaks at semantic change points (percentile of similarity distance)"
+  },
+  "analysis": {
+    "sample_chunks_to_show": 3,
+    "include_first_last": true,
+    "include_boundary_analysis": true,
+    "description": "How many chunks to display as examples"
+  }
+}

@@ -1,0 +1,121 @@
+document_id,title,strategy,total_chunks,avg_size,min_size,max_size,has_headings,complete_boundaries,incomplete_boundaries
+APP-ENG-001,A CronJob starts one-time Jobs on a repe,FIXED,32,494.0,308,500,No,1,3
+APP-ENG-001,A CronJob starts one-time Jobs on a repe,RECURSIVE,42,340.1,65,494,No,3,3
+APP-ENG-001,A CronJob starts one-time Jobs on a repe,STRUCTURE,13,1085.5,299,3547,Yes,3,2
+APP-ENG-001,A CronJob starts one-time Jobs on a repe,SEMANTIC,26,545.7,0,2434,No,3,0
+APP-ENG-002,Daemonset,FIXED,33,499.4,481,500,No,1,3
+APP-ENG-002,Daemonset,RECURSIVE,45,332.6,32,498,No,3,3
+APP-ENG-002,Daemonset,STRUCTURE,15,987.9,356,3665,Yes,3,3
+APP-ENG-002,Daemonset,SEMANTIC,25,580.4,0,2515,No,3,0
+APP-ENG-003,Kubernetes progressively rolls out chang,FIXED,133,499.1,382,500,No,2,3
+APP-ENG-003,Kubernetes progressively rolls out chang,RECURSIVE,162,371.1,57,497,No,3,3
+APP-ENG-003,Kubernetes progressively rolls out chang,STRUCTURE,31,1872.7,258,6731,Yes,3,3
+APP-ENG-003,Kubernetes progressively rolls out chang,SEMANTIC,77,772.5,0,4757,No,3,0
+APP-ENG-004,Scale your application up and down with ,FIXED,78,495.0,111,500,No,1,3
+APP-ENG-004,Scale your application up and down with ,RECURSIVE,98,356.5,29,497,No,3,3
+APP-ENG-004,Scale your application up and down with ,STRUCTURE,27,1277.3,231,4992,Yes,3,3
+APP-ENG-004,Scale your application up and down with ,SEMANTIC,53,652.6,0,4711,No,3,0
+APP-ENG-005,Jobs represent one-off tasks that run to,FIXED,146,497.3,112,500,No,2,3
+APP-ENG-005,Jobs represent one-off tasks that run to,RECURSIVE,186,355.7,3,500,No,3,3
+APP-ENG-005,Jobs represent one-off tasks that run to,STRUCTURE,38,1696.7,104,5593,Yes,3,3
+APP-ENG-005,Jobs represent one-off tasks that run to,SEMANTIC,102,637.8,2,4712,No,3,0
+APP-ENG-006,Lifecycle,FIXED,9,490.2,412,500,No,1,3
+APP-ENG-006,Lifecycle,RECURSIVE,13,309.7,30,493,No,3,3
+APP-ENG-006,Lifecycle,STRUCTURE,5,797.0,525,1501,Yes,3,1
+APP-ENG-006,Lifecycle,SEMANTIC,9,444.2,98,1238,No,3,0
+APP-ENG-007,A ReplicaSet's purpose is to maintain a ,FIXED,43,497.7,403,500,No,2,3
+APP-ENG-007,A ReplicaSet's purpose is to maintain a ,RECURSIVE,56,352.2,13,498,No,3,3
+APP-ENG-007,A ReplicaSet's purpose is to maintain a ,STRUCTURE,28,686.5,1,2529,Yes,3,3
+APP-ENG-007,A ReplicaSet's purpose is to maintain a ,SEMANTIC,27,712.4,0,2749,No,3,0
+APP-ENG-008,Legacy API for managing workloads that c,FIXED,42,495.9,329,500,No,2,3
+APP-ENG-008,Legacy API for managing workloads that c,RECURSIVE,56,346.1,35,499,No,3,3
+APP-ENG-008,Legacy API for managing workloads that c,STRUCTURE,25,750.2,177,2485,Yes,3,1
+APP-ENG-008,Legacy API for managing workloads that c,SEMANTIC,30,622.6,0,2608,No,3,0
+APP-ENG-009,"A StatefulSet runs a group of Pods, and ",FIXED,61,498.7,421,500,No,2,3
+APP-ENG-009,"A StatefulSet runs a group of Pods, and ",RECURSIVE,78,353.9,36,496,No,3,3
+APP-ENG-009,"A StatefulSet runs a group of Pods, and ",STRUCTURE,28,976.4,213,4107,Yes,3,3
+APP-ENG-009,"A StatefulSet runs a group of Pods, and ",SEMANTIC,47,580.5,0,2204,No,3,0
+APP-ENG-010,Automatically adjust resource requests a,FIXED,32,493.5,293,500,No,2,3
+APP-ENG-010,Automatically adjust resource requests a,RECURSIVE,45,322.6,3,500,No,3,3
+APP-ENG-010,Automatically adjust resource requests a,STRUCTURE,14,1007.1,264,4674,Yes,3,2
+APP-ENG-010,Automatically adjust resource requests a,SEMANTIC,20,709.4,0,2635,No,3,0
+PLAT-ENG-001,Dynamic Provisioning,FIXED,12,472.9,175,500,No,2,3
+PLAT-ENG-001,Dynamic Provisioning,RECURSIVE,17,304.4,28,496,No,3,3
+PLAT-ENG-001,Dynamic Provisioning,STRUCTURE,6,850.0,352,1218,Yes,3,2
+PLAT-ENG-001,Dynamic Provisioning,SEMANTIC,9,567.2,0,1495,No,3,0
+PLAT-ENG-002,Ephemeral Storage,FIXED,29,489.6,199,500,No,0,3
+PLAT-ENG-002,Ephemeral Storage,RECURSIVE,35,370.4,138,497,No,3,3
+PLAT-ENG-002,Ephemeral Storage,STRUCTURE,6,2114.2,117,5263,Yes,2,3
+PLAT-ENG-002,Ephemeral Storage,SEMANTIC,22,578.9,79,1624,No,3,0
+PLAT-ENG-003,Ephemeral Volumes,FIXED,26,496.0,397,500,No,2,3
+PLAT-ENG-003,Ephemeral Volumes,RECURSIVE,37,318.6,8,498,No,3,3
+PLAT-ENG-003,Ephemeral Volumes,STRUCTURE,11,1033.7,149,1940,Yes,3,2
+PLAT-ENG-003,Ephemeral Volumes,SEMANTIC,17,682.5,50,2925,No,3,0
+PLAT-ENG-004,Automatically mount the storage system o,FIXED,115,496.4,90,500,No,0,3
+PLAT-ENG-004,Automatically mount the storage system o,RECURSIVE,145,356.8,11,497,No,3,3
+PLAT-ENG-004,Automatically mount the storage system o,STRUCTURE,45,1128.2,122,5414,Yes,3,3
+PLAT-ENG-004,Automatically mount the storage system o,SEMANTIC,79,647.7,2,3148,No,3,0
+PLAT-ENG-005,Projected Volumes,FIXED,28,485.1,84,500,No,0,3
+PLAT-ENG-005,Projected Volumes,RECURSIVE,35,347.9,12,488,No,3,3
+PLAT-ENG-005,Projected Volumes,STRUCTURE,10,1217.6,211,3509,Yes,3,3
+PLAT-ENG-005,Projected Volumes,SEMANTIC,19,641.3,94,2601,No,3,0
+PLAT-ENG-006,Storage Capacity,FIXED,11,477.3,250,500,No,1,3
+PLAT-ENG-006,Storage Capacity,RECURSIVE,14,346.4,247,497,No,3,3
+PLAT-ENG-006,Storage Capacity,STRUCTURE,7,676.0,247,1317,Yes,3,1
+PLAT-ENG-006,Storage Capacity,SEMANTIC,8,591.4,0,1335,No,3,0
+PLAT-ENG-007,Storage Classes,FIXED,52,497.4,364,500,No,1,3
+PLAT-ENG-007,Storage Classes,RECURSIVE,65,361.2,75,496,No,3,3
+PLAT-ENG-007,Storage Classes,STRUCTURE,19,1216.4,381,3571,Yes,3,3
+PLAT-ENG-007,Storage Classes,SEMANTIC,43,538.8,2,3493,No,3,0
+PLAT-ENG-008,Storage Limits,FIXED,13,496.7,457,500,No,1,3
+PLAT-ENG-008,Storage Limits,RECURSIVE,15,392.4,218,495,No,3,3
+PLAT-ENG-008,Storage Limits,STRUCTURE,6,976.0,537,1599,Yes,3,3
+PLAT-ENG-008,Storage Limits,SEMANTIC,9,647.9,0,1659,No,3,0
+PLAT-ENG-009,Volume Attributes Classes,FIXED,11,474.8,223,500,No,1,3
+PLAT-ENG-009,Volume Attributes Classes,RECURSIVE,14,336.6,141,463,No,3,3
+PLAT-ENG-009,Volume Attributes Classes,STRUCTURE,5,941.6,757,1184,Yes,3,1
+PLAT-ENG-009,Volume Attributes Classes,SEMANTIC,8,587.8,0,1786,No,3,0
+PLAT-ENG-010,Volume Health Monitoring,FIXED,18,498.4,472,500,No,1,3
+PLAT-ENG-010,Volume Health Monitoring,RECURSIVE,24,342.0,14,485,No,3,3
+PLAT-ENG-010,Volume Health Monitoring,STRUCTURE,9,891.3,235,1481,Yes,3,1
+PLAT-ENG-010,Volume Health Monitoring,SEMANTIC,11,735.7,117,1743,No,3,0
+SEC-ENG-001,Security architecture information relati,FIXED,20,486.4,228,500,No,1,3
+SEC-ENG-001,Security architecture information relati,RECURSIVE,26,338.5,43,483,No,3,3
+SEC-ENG-001,Security architecture information relati,STRUCTURE,9,972.1,417,1754,Yes,3,1
+SEC-ENG-001,Security architecture information relati,SEMANTIC,18,485.2,0,942,No,3,0
+SEC-ENG-002,Baseline guidelines around ensuring appl,FIXED,15,484.5,267,500,No,1,3
+SEC-ENG-002,Baseline guidelines around ensuring appl,RECURSIVE,18,368.4,16,498,No,3,3
+SEC-ENG-002,Baseline guidelines around ensuring appl,STRUCTURE,12,544.3,164,1420,Yes,3,1
+SEC-ENG-002,Baseline guidelines around ensuring appl,SEMANTIC,13,502.3,64,1266,No,3,0
+SEC-ENG-003,Information on authentication options in,FIXED,21,482.3,128,500,No,0,3
+SEC-ENG-003,Information on authentication options in,RECURSIVE,25,365.2,165,493,No,3,3
+SEC-ENG-003,Information on authentication options in,STRUCTURE,10,910.1,446,1555,Yes,3,1
+SEC-ENG-003,Information on authentication options in,SEMANTIC,15,606.5,125,1852,No,3,0
+SEC-ENG-004,Information about hardening Dynamic Reso,FIXED,9,482.8,345,500,No,0,3
+SEC-ENG-004,Information about hardening Dynamic Reso,RECURSIVE,9,451.0,268,492,No,1,3
+SEC-ENG-004,Information about hardening Dynamic Reso,STRUCTURE,8,480.8,190,930,Yes,3,3
+SEC-ENG-004,Information about hardening Dynamic Reso,SEMANTIC,5,785.0,43,1987,No,3,0
+SEC-ENG-005,Information about how to make the Kubern,FIXED,14,494.0,416,500,No,1,3
+SEC-ENG-005,Information about how to make the Kubern,RECURSIVE,17,371.2,45,487,No,3,3
+SEC-ENG-005,Information about how to make the Kubern,STRUCTURE,7,874.7,180,2101,Yes,3,1
+SEC-ENG-005,Information about how to make the Kubern,SEMANTIC,11,565.8,0,1858,No,3,0
+SHARED-001,Annotations,FIXED,10,490.5,405,500,No,0,3
+SHARED-001,Annotations,RECURSIVE,12,376.2,82,497,No,3,3
+SHARED-001,Annotations,STRUCTURE,4,1104.8,224,2178,Yes,1,2
+SHARED-001,Annotations,SEMANTIC,9,492.4,95,1216,No,3,0
+SHARED-002,Common Labels,FIXED,14,472.1,110,500,No,3,3
+SHARED-002,Common Labels,RECURSIVE,16,376.5,121,475,No,3,3
+SHARED-002,Common Labels,STRUCTURE,6,970.5,110,1828,Yes,3,2
+SHARED-002,Common Labels,SEMANTIC,9,660.1,0,2361,No,3,0
+SHARED-003,Field Selectors,FIXED,15,494.9,423,500,No,0,3
+SHARED-003,Field Selectors,RECURSIVE,23,295.0,115,491,No,1,3
+SHARED-003,Field Selectors,STRUCTURE,7,960.7,301,3505,Yes,1,3
+SHARED-003,Field Selectors,SEMANTIC,5,1343.2,79,4200,No,3,0
+SHARED-004,Finalizers,FIXED,12,476.2,215,500,No,1,3
+SHARED-004,Finalizers,RECURSIVE,17,305.1,38,479,No,3,3
+SHARED-004,Finalizers,STRUCTURE,4,1290.0,158,2501,Yes,2,2
+SHARED-004,Finalizers,SEMANTIC,10,514.3,59,2050,No,3,0
+SHARED-005,Labels,FIXED,35,491.8,213,500,No,0,3
+SHARED-005,Labels,RECURSIVE,47,334.4,22,497,No,3,3
+SHARED-005,Labels,STRUCTURE,11,1403.2,572,2551,Yes,3,3
+SHARED-005,Labels,SEMANTIC,21,736.4,61,2597,No,3,0
